@@ -1,8 +1,13 @@
-public class HelloWorld {                            // [1]
-    public static void main(String[] args) {
-        String example = "Hello from my FirstClass!";
-        System.out.println(michal);
-        double height = 1.87;
-        int myAge = 32;
+import javax.swing.*;
+
+public class HelloWorld {
+    public static void main(String[] args) {         // [2]
+
+        System.out.println("Hello World");
+        String name = "Michal";
+        System.out.println(name.toUpperCase());
+        System.out.println(32);
+        System.out.println('K');
+
     }
 }
