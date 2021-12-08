@@ -14,6 +14,7 @@ public class LeapYear {
                     leap = false;
             }
 
+            else
             leap = true;
         }
         else
@@ -21,7 +22,7 @@ public class LeapYear {
             leap = false;
         }
 
-        if (leap == false)
+        if (leap == true)
             System.out.println("The year 2021 is a leap year");
         else
             System.out.println("The year 2021 is not a leap year");
