@@ -32,10 +32,10 @@ public class Notebook {
         }
     }
 
-    public void checkYear() {
-            if (this.year > 2020) {
-                System.out.println("This notebook is new and cheap");
-            } else if (this.year > 2017) {
+    public void checkYearAndPrice() {
+            if (this.year > 2020 && this.price < 600) {
+                System.out.println("This notebook is new and cheap.");
+            } else if (this.year > 2017 && this.price <= 1000) {
                 System.out.println("This notebook isn't old and expensive.");
             } else {
                 System.out.println("This notebook is old and expensive.");
