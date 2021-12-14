@@ -5,8 +5,7 @@ public class RandomNumbers {
         RandomNumbers rn = new RandomNumbers();
         int r = rn.generateNumber(30);
         System.out.println(r);
-
-        }
+}
         public int generateNumber(int max) {
             Random random = new Random();
             int result = 0;
