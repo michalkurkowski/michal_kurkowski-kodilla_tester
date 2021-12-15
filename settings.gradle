@@ -7,4 +7,7 @@ include 'kodilla-intro12'
 include 'kodilla-prolog'
 include 'kodilla-proba'
 include 'kodilla-prolog'
+include 'kodilla-intro:src:main:kodilla-basic-tests'
+findProject(':kodilla-intro:src:main:kodilla-basic-tests')?.name = 'kodilla-basic-tests'
+include 'kodilla-basic-tests'
 

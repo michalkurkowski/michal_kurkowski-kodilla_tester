@@ -4,8 +4,8 @@ public class Application {
     double height;
 
     public static void main(String[] args) {
-        Application Adam = new Application("adam", 40.5, 178);
-        Adam.checkUser();
+        Application adam = new Application("adam", 40.5, 178);
+        adam.checkUser();
     }
 
     public Application(String name, double age, double height) {
