@@ -24,7 +24,7 @@ public class UserDialogs {
                 case "D": return "DIV";
                 case "M": return "MUL";
                 default:
-                    System.out.println("Wrong calculation. Try again.");
+                    System.out.println("Spróbuj jeszcze raz (A-add, S-subtract, D-divide, M-multiply)");
             }
         }
     }

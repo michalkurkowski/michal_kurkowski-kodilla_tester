@@ -26,7 +26,6 @@ public class RainbowClass {
                     break;
                 default:
                     System.out.println("Spróbuj jeszcze raz: (B - biały, Ż - żółty, L - limonkowy, F - fioletowy):");
-                    break;
             }
             return color;
         }

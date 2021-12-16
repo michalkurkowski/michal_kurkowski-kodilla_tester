@@ -21,13 +21,15 @@ public class Book {
     }
 
     public static void main(String[] args) {
+        displayAuthorAndTitle();
         Book book = Book.of("Isaac", "The Galaxy");
         System.out.println(Book.of("Isaac Assimov", "The Galaxy"));
 
     }
-        public void displayAuthorAndTitle () {
-            Book book = new Book("Isaac", "The Galaxy");
-            System.out.println(book.getTitle() + book.getAuthor());
+        public static void displayAuthorAndTitle () {
+            Book book = new Book("Isaac Assimov", "The Galaxy");
+            System.out.println(book.getAuthor());
+            System.out.println(book.getTitle());
         }
     }
 
