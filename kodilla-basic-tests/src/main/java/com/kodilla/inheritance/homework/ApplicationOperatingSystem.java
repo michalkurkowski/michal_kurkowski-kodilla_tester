@@ -6,7 +6,10 @@ public class ApplicationOperatingSystem {
         OperatingSystem operatingSystem = new OperatingSystem(1989);
         operatingSystem.turnOff();
 
-        OperatingSystem operatingSystem1 = new OperatingSystem(1989);
-        operatingSystem1.displayYear();
+        OS oS = new OS(2000);
+        oS.displayYear();
+
+        newOS newOS = new newOS(1990);
+        newOS.showNothing();
     }
 }
