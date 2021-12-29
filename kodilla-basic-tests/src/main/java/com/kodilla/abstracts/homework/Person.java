@@ -1,21 +1,23 @@
 package com.kodilla.abstracts.homework;
 
-import com.kodilla.abstracts.Animal;
-import com.kodilla.abstracts.AnimalProcessor;
-import com.kodilla.abstracts.Dog;
-
 public class Person {
 
     String name;
+    String job;
     int age;
 
-    public Person(String name, int age) {
+    public Person(String name, String job, int age) {
         this.name = name;
         this.age = age;
+        this.job = job;
     }
 
     String getName() {
         return this.name;
+    }
+
+    String getJob() {
+        return this.job;
     }
 
     int getAge() {
@@ -23,13 +25,14 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person michal = new Person("Michal", 40);
+        Person michal = new Person("Michal", "prawnik", 40);
         System.out.println(michal.getName());
         System.out.println(michal.getAge());
+        System.out.println(michal.getJob());
 
-        Job prawnik = new Prawnik();
+        Job lawyer = new Lawyer();
         PersonProcessor processor = new PersonProcessor();
-        processor.process(prawnik);
+        processor.process(lawyer);
 
         }
     }

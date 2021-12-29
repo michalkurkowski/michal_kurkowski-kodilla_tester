@@ -1,8 +1,8 @@
 package com.kodilla.abstracts.homework;
 
-public class Prawnik extends Job {
+public class Lawyer extends Job {
 
-    public Prawnik() {
+    public Lawyer() {
         super(10000);
     }
 

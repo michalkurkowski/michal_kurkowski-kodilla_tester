@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class RainbowClass {
     public static void main(String[] args) {
     chooseColor();
+        System.out.println(chooseColor());
 
         }
 

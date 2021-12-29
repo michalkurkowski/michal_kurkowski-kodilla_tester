@@ -1,8 +1,8 @@
 package com.kodilla.abstracts.homework;
 
-public class Bezrobotny extends Job {
+public class Unemployed extends Job {
 
-    public Bezrobotny() {
+    public Unemployed() {
         super(0);
     }
 
