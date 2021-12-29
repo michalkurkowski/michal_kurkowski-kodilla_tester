@@ -26,7 +26,8 @@ public class Book {
     }
         public static void displayAuthorAndTitle() {
             Book book = Book.of("Isaac Assimov", "The Galaxy");
-            System.out.println(Book.of("Isaac Assimov", "The Galaxy"));
+            System.out.println(book.getTitle());
+            System.out.println(book.getAuthor());
         }
     }
 
