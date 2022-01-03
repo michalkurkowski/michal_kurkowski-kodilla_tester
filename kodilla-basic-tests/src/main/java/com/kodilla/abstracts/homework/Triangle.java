@@ -1,10 +1,11 @@
 package com.kodilla.abstracts.homework;
 
 public class Triangle extends Shape {
-    private double a, b;
+    private double a, h;
 
-    public Triangle() {
-        super(4, 6);
+    public Triangle(int a, int h) {
+        this.a = a;
+        this.h = h;
     }
 
     @Override
@@ -14,7 +15,7 @@ public class Triangle extends Shape {
 
     @Override
     double surface() {
-        return 4*6/2;
+        return a*h/2;
     }
 }
 

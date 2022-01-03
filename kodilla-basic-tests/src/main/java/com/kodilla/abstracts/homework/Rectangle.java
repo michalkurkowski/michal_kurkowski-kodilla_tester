@@ -3,8 +3,9 @@ package com.kodilla.abstracts.homework;
 public class Rectangle extends Shape {
     private double a, b;
 
-    public Rectangle() {
-        super(2, 4);
+    public Rectangle(int a, int b) {
+        this.a = a;
+        this.b = b;
     }
 
     @Override

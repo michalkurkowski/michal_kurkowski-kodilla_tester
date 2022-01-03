@@ -3,10 +3,10 @@ package com.kodilla.abstracts.homework;
 public class Person {
 
     String name;
-    String job;
+    Job job;
     int age;
 
-    public Person(String name, String job, int age) {
+    public Person(String name, Job job, int age) {
         this.name = name;
         this.age = age;
         this.job = job;
@@ -16,7 +16,7 @@ public class Person {
         return this.name;
     }
 
-    String getJob() {
+    Job getJob() {
         return this.job;
     }
 
@@ -25,10 +25,11 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person michal = new Person("Michal", "prawnik", 40);
+        Job jobLawyer = new Lawyer();
+        Person michal = new Person("Michal", jobLawyer, 40);
         System.out.println(michal.getName());
         System.out.println(michal.getAge());
-        System.out.println(michal.getJob());
+        michal.getJob().showRes();
 
         Job lawyer = new Lawyer();
         PersonProcessor processor = new PersonProcessor();

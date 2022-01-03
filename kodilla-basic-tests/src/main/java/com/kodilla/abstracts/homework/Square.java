@@ -1,19 +1,19 @@
 package com.kodilla.abstracts.homework;
 
 public class Square extends Shape {
-    private double a, b;
+    private double a;
 
-    public Square() {
-        super(4, 4);
+    public Square(int a) {
+        this.a = a;
     }
 
     @Override
     double circuit() {
-        return a*b;
+        return a*a;
     }
 
     @Override
     double surface() {
-        return 2*a+2*b;
+        return 4*a;
     }
 }
