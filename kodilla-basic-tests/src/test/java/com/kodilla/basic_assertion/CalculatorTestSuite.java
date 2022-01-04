@@ -2,6 +2,7 @@ package com.kodilla.basic_assertion;
 
 import org.junit.jupiter.api.Test;
 
+import static com.kodilla.basic_assertion.ResultChecker.assertEqualsWithDelta;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculatorTestSuite {
@@ -48,5 +49,14 @@ public class CalculatorTestSuite {
         int n = 8;
         int squaringResult = calculator2.squaring(e, n);
         assertEquals(0, squaringResult);
+    }
+
+    @Test
+    public void testSumDouble() {
+        Calculator calculator3 = new Calculator();
+        double f = 0.5;
+        double g = 0.8;
+        double sumDoubleResult = calculator3.sumDouble(f, g);
+        assertEqualsWithDelta(1.3,1.34,1.3456);
     }
 }

@@ -12,7 +12,9 @@ public class Calculator {
 
     public int squaring(double e, int n) {
         return (int) Math.pow(e, n);
-
+    }
+    public double sumDouble(double f, double g) {
+        return f + g;
     }
 }
 
