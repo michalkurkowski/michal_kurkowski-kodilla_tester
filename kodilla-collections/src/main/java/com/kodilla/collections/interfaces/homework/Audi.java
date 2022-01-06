@@ -22,4 +22,11 @@ public Audi(int speed) {
     public void decreaseSpeed() {
         this.speed -= 50;
     }
+
+    @Override
+    public String toString() {
+        return "Audi{" +
+                "speed=" + speed +
+                '}';
+    }
 }

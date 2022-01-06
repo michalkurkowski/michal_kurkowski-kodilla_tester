@@ -20,4 +20,11 @@ public class Opel implements Car {
     public void decreaseSpeed() {
         this.speed -= 30;
     }
+
+    @Override
+    public String toString() {
+        return "Opel{" +
+                "speed=" + speed +
+                '}';
+    }
 }
