@@ -10,5 +10,7 @@ public class Bank {
     public double getWholeBalance() {
         double result = 0.0;
         for (CashMachine cashMachine : cashMachines) ;
+
+        return result;
     }
 }
