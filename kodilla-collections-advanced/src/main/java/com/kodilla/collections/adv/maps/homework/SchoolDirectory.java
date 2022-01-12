@@ -11,13 +11,13 @@ public class SchoolDirectory {
         Principal wojtek = new Principal("Wojtek", "Hello");
         Principal robert = new Principal("Robert", "Simpson");
 
-        School elementary = new School("podstawowa", 100);
-        School middle = new School("średnia", 150);
-        School high = new School("wyższa",200);
+        School school1 = new School("podstawowa", 100);
+        School school2 = new School("średnia", 150);
+        School school3 = new School("wyższa",200);
 
-        principalOfSchool.put(elementary, adam);
-        principalOfSchool.put(middle, wojtek);
-        principalOfSchool.put(high, robert);
+        principalOfSchool.put(school1, adam);
+        principalOfSchool.put(school2, wojtek);
+        principalOfSchool.put(school3, robert);
 
         for (Map.Entry<School, Principal> schoolDirectory : principalOfSchool.entrySet())
             System.out.println(schoolDirectory.getKey().toString() + schoolDirectory.getValue().toString());
