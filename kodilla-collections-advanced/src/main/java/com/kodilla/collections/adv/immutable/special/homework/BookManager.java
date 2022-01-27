@@ -9,11 +9,12 @@ public class BookManager {
 
     public static Book createBook(String title, String author) {
         Book book = new Book(title, author);
-        books.add(book);
-        return book;
-    }
+            books.add(book);
 
-    public static int howManyBooks() {
-        return books.size();
-    }
+            return book;
+        }
+
+        public static int howManyBooks() {
+            return books.size();
+        }
 }
